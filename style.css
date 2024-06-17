@@ -56,6 +56,7 @@
 
 }
 
+
 /*-----------------------------------*\
  * #RESET
 \*-----------------------------------*/
@@ -100,6 +101,7 @@ body { background: var(--eerie-black); }
 
 body.active { overflow: hidden; }
 
+
 /*-----------------------------------*\
  * #REUSED STYLE
 \*-----------------------------------*/
@@ -130,7 +132,7 @@ body.active { overflow: hidden; }
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .section-title { text-align: left; }
@@ -348,6 +350,7 @@ body.active { overflow: hidden; }
               inset 0 -1px 0 var(--black);
 }
 
+
 /*-----------------------------------*\
  * #HEADER
 \*-----------------------------------*/
@@ -461,6 +464,7 @@ body.active { overflow: hidden; }
   pointer-events: all;
 }
 
+
 /*-----------------------------------*\
  * #inicio
 \*-----------------------------------*/
@@ -479,7 +483,7 @@ body.active { overflow: hidden; }
 }
 
 .inicio-content {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .inicio-text {
@@ -505,7 +509,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .upcoming {
-  background: url("../images/upcoming-bg.png") no-repeat;
+  background: url("./img/upcoming-bg.png") no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -541,12 +545,12 @@ body.active { overflow: hidden; }
 }
 
 
-/*---------------------------------*\
+/*-----------------------------------*\
  * #TOP RATED
 \*-----------------------------------*/
 
 .top-rated {
-  background: url("../images/top-rated-bg.jpg") no-repeat;
+  background: url("img/top-rated-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -597,7 +601,7 @@ body.active { overflow: hidden; }
 \*-----------------------------------*/
 
 .tv-series {
-  background: url("../images/tv-series-bg.jpg") no-repeat;
+  background: url("img/filmes-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: var(--section-padding);
@@ -607,69 +611,11 @@ body.active { overflow: hidden; }
 
 
 /*-----------------------------------*\
- * #CTA
-\*-----------------------------------*/
-
-.cta {
-  background: url("../images/cta-bg.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding-block: 50px;
-}
-
-.cta .title-wrapper { margin-bottom: 25px; }
-
-.cta-title {
-  color: var(--eerie-black);
-  font-size: var(--fs-3);
-  text-transform: uppercase;
-  line-height: 1.2;
-  margin-bottom: 5px;
-}
-
-.cta-text {
-  color: var(--eerie-black);
-  font-size: var(--fs-9);
-  font-weight: var(--fw-500);
-  line-height: 1.8;
-}
-
-.cta .email-field {
-  color: var(--eerie-black);
-  font-size: var(--fs-9);
-  padding: 18px 32px;
-  border-radius: 4px;
-  box-shadow: 0 3px 4px hsla(0, 0%, 0%, 0.2);
-  margin-bottom: 15px;
-}
-
-.cta-form-btn {
-  background: var(--eerie-black);
-  color: var(--citrine);
-  font-size: var(--fs-9);
-  font-weight: var(--fw-700);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 2px solid var(--eerie-black);
-  padding: 15px 34px;
-  border-radius: 4px;
-  margin-inline: auto;
-  transition: var(--transition-1);
-}
-
-.cta-form-btn:is(:hover, :focus) {
-  background: var(--citrine);
-  color: var(--eerie-black);
-}
-
-
-/*-----------------------------------*\
  * #FOOTER
 \*-----------------------------------*/
 
 .footer-top {
-  background: url("../images/footer-bg.jpg") no-repeat;
+  background: url("./img/footer-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: 80px 50px;
@@ -787,130 +733,6 @@ body.active { overflow: hidden; }
 
 
 /*-----------------------------------*\
- * #MOVIE DETAIL 
-\*-----------------------------------*/
-
-.movie-detail {
-  background: url("../images/movie-detail-bg.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 160px;
-  padding-bottom: var(--section-padding);
-}
-
-.movie-detail-banner {
-  position: relative;
-  background: var(--gunmetal-1);
-  max-width: 300px;
-  margin-inline: auto;
-  border-radius: 6px;
-  overflow: hidden;
-  margin-bottom: 50px;
-}
-
-.movie-detail-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.play-btn {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  font-size: 120px;
-  color: var(--white);
-  transition: var(--transition-1);
-}
-
-.play-btn:hover { background: hsla(0, 0%, 0%, 0.25); }
-
-.detail-subtitle {
-  font-size: var(--fs-5);
-  color: var(--citrine);
-  font-weight: var(--fw-700);
-  margin-bottom: 10px;
-}
-
-.detail-title { margin-bottom: 20px; }
-
-.detail-title strong { color: var(--citrine); }
-
-.movie-detail .meta-wrapper { margin-bottom: 30px; }
-
-.storyline {
-  color: var(--gray-x);
-  font-size: var(--fs-9);
-  font-weight: var(--fw-500);
-  line-height: 1.8;
-  margin-bottom: 40px;
-}
-
-.details-actions {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px 40px;
-  max-width: 460px;
-  background: var(--gunmetal-2);
-  padding: 25px;
-  border: 1px solid var(--jet);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.details-actions .share ion-icon {
-  font-size: 25px;
-  color: var(--white);
-  margin-inline: auto;
-}
-
-.details-actions .share span {
-  color: var(--gainsboro);
-  font-size: var(--fs-11);
-  transition: var(--transition-1);
-}
-
-.details-actions .share:is(:hover, :focus) span { color: var(--citrine); }
-
-.details-actions .title {
-  color: var(--white);
-  font-weight: var(--fw-700);
-}
-
-.details-actions .text {
-  font-size: var(--fs-11);
-  color: var(--gainsboro);
-}
-
-.details-actions .btn-primary {
-  font-size: 10px;
-  padding: 13px 26px;
-  letter-spacing: 0;
-  background: transparent;
-}
-
-.details-actions .btn-primary:is(:hover, :focus) { background: var(--citrine); }
-
-.download-btn {
-  max-width: max-content;
-  background: var(--citrine);
-  color: var(--rich-black-fogra-29);
-  font-size: var(--fs-11);
-  font-weight: var(--fw-500);
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 20px 35px;
-  letter-spacing: 5px;
-  border-radius: 6px;
-}
-
-.download-btn ion-icon { font-size: 16px; }
-
-/*-----------------------------------*\
  * #MEDIA QUERIES
 \*-----------------------------------*/
 
@@ -934,6 +756,7 @@ body.active { overflow: hidden; }
 
   }
 
+
   /**
    * REUSED STYLE
    */
@@ -950,13 +773,16 @@ body.active { overflow: hidden; }
     gap: 60px 30px;
   }
 
+
+
   /**
-   * HERO
+   * INICIO
    */
 
   .inicio { min-height: unset; }
 
-  .inicio-content { margin-top: 30px; }
+  .inicio-content { margin-top: 90px; }
+
 
 
   /**
@@ -965,15 +791,8 @@ body.active { overflow: hidden; }
 
   .upcoming .movies-list > li { min-width: calc(50% - 15px); }
 
-  /**
-   * MOVIE DETAIL
-   */
-
-  .detail-subtitle { --fs-5: 22px; }
-
-  .detail-title { --fs-1: 46px; }
-
 }
+
 
 /**
  * responsive for large than 768px screen
@@ -995,11 +814,13 @@ body.active { overflow: hidden; }
 
   }
 
+
   /**
    * REUSED STYLE
    */
 
   .container { max-width: 720px; }
+
 
   /**
    * HEADER
@@ -1052,34 +873,13 @@ body.active { overflow: hidden; }
 
   .lang-wrapper option { color: var(--black); }
 
-  /**
-   * HERO
-   */
-
-  .inicio-content { margin-top: 90px; }
 
   /**
-   * SERVICE excluido sessao
+   * inicio
    */
 
-  /**
-   * CTA
-   */
+  .inicio-content { margin-top: 100px; }
 
-  .cta-form {
-    position: relative;
-    max-width: 530px;
-    margin-inline: auto;
-  }
-
-  .cta .email-field { margin-bottom: 0; }
-
-  .cta-form-btn {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
-  }
 
   /**
    * FOOTER
@@ -1101,15 +901,6 @@ body.active { overflow: hidden; }
 
   .footer-bottom-img { margin-inline: 0; }
 
-  /**
-   * MOVIE DETAIL
-   */
-
-  .detail-subtitle { --fs-5: 26px; }
-
-  .detail-title { --fs-1: 50px; }
-
-}
 
 
 /**
@@ -1166,8 +957,9 @@ body.active { overflow: hidden; }
 
   .overlay { display: none; }
 
+
   /**
-   * HERO
+   * inicio
    */
 
   .inicio { background-position: right; }
@@ -1176,8 +968,9 @@ body.active { overflow: hidden; }
 
   .inicio-content {
     margin-top: 100px;
-    max-width: 600px;
+    max-width: 800px;
   }
+
 
   /**
    * UPCOMING
@@ -1195,59 +988,17 @@ body.active { overflow: hidden; }
 
   .upcoming .movies-list > li { min-width: calc(33.33% - 20px); }
 
+ 
 
-  /**
-   * CTA
-   */
-
-  .cta { text-align: left; }
-
-  .cta .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .cta .title-wrapper {
-    margin-bottom: 0;
-    width: 100%;
-  }
-
-  .cta-form {
-    margin-inline: 0;
-    max-width: unset;
-    width: 100%;
-  }
-
-  /**
-   * MOVIE DETAIL
-   */
-
-  .movie-detail { padding-bottom: 200px; }
-
-  .movie-detail .container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
-
-  .movie-detail-banner,
-  .details-actions { margin: 0; }
-
-  .download-btn {
-    position: absolute;
-    left: 15px;
-    bottom: -80px;
-  }
 
 }
+
 
 /**
  * responsive for large than 1200px screen
  */
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {}
 
   /**
    * CUSTOM PROPERTY
@@ -1265,6 +1016,7 @@ body.active { overflow: hidden; }
   }
 
 
+
   /**
    * REUSED STYLE
    */
@@ -1274,6 +1026,8 @@ body.active { overflow: hidden; }
   /* MOVIE CARD */
 
   .movies-list { grid-template-columns: repeat(4, 1fr); }
+
+
 
   /**
    * HEADER
@@ -1288,46 +1042,25 @@ body.active { overflow: hidden; }
     letter-spacing: 1px;
   }
 
+
+
   /**
-   * HERO
+   * INICIO
    */
 
   .inicio .container { width: 1320px; }
+
+
 
   /**
    * UPCOMING
    */
 
-  .upcoming .movies-list > li { min-width: calc(25% - 22.5px); 
-
-  /**
-   * CTA
-   */
-
-  .cta .container { max-width: 1150px; }
-
-  /**
-   * MOVIE DETAIL
-   */
-
-  .movie-detail { padding-bottom: var(--section-padding); }
-
-  .movie-detail-content { max-width: 620px; }
-
-  .detail-title { --fs-1: 60px; }
-
-  .download-btn {
-    left: auto;
-    right: 15px;
-    bottom: 0;
-    transform: rotate(0.25turn) translateY(100%);
-    transform-origin: bottom right;
-    padding: 40px 50px;
-  }
+  .upcoming .movies-list > li { min-width: calc(25% - 22.5px); }
 
   .download-btn ion-icon {
     font-size: 30px;
     transform: rotate(-0.25turn);
   }
 
-}
+} 
